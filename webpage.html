@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Fest 2026</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f2f5ff;
+            text-align: center;
+        }
+
+        header {
+            background: #392578;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            background: #211548;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        .banner {
+            background: #7048c6;
+            color: white;
+            padding: 55px 15px;
+        }
+
+        .banner h1 {
+            font-size: 38px;
+        }
+
+        section {
+            padding: 25px 15px;
+        }
+
+        .events {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px #ccc;
+        }
+
+        button {
+            background: #392578;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input, select {
+            width: 85%;
+            padding: 10px;
+            margin: 8px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background: #211548;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>COLLEGE FEST 2026</h2>
+        <p>Celebrate Talent and Creativity!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register">Register</a>
+    </nav>
+
+    <div class="banner" id="home">
+        <h1>Welcome to College Fest</h1>
+        <p>Two Days of Fun, Technology, Music and Dance!</p>
+        <h3>December 12 - 13, 2026</h3>
+        <a href="#register">
+            <button>Register Now</button>
+        </a>
+    </div>
+
+    <section id="events">
+        <h2>Our Events</h2>
+
+        <div class="events">
+            <div class="card">
+                <h3>💻 Technical</h3>
+                <p>Coding Competition</p>
+                <p>Tech Quiz</p>
+            </div>
+
+            <div class="card">
+                <h3>🎤 Cultural</h3>
+                <p>Singing</p>
+                <p>Dancing</p>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Workshops</h3>
+                <p>AI Workshop</p>
+                <p>Web Development</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <p>9:00 AM - Inauguration</p>
+        <p>10:00 AM - Technical Events</p>
+        <p>1:00 PM - Cultural Competitions</p>
+        <p>4:00 PM - Prize Distribution</p>
+    </section>
+
+    <section>
+        <h2>Event Rules</h2>
+        <p>1. Bring your college ID card.</p>
+        <p>2. Register before participating.</p>
+        <p>3. Follow the event coordinators' instructions.</p>
+    </section>
+
+    <section id="register">
+        <h2>Register Here</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="College Name" required>
+
+            <select required>
+                <option value="">Select Event</option>
+                <option>Technical</option>
+                <option>Cultural</option>
+                <option>Workshop</option>
+            </select>
+
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 College Fest | All Rights Reserved</p>
+        <p>Contact: collegefest@example.com</p>
+    </footer>
+
+</body>
+</html>
