@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Academic Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <h2>🎓 StudentHub</h2>
+        <p class="menu-title">MAIN MENU</p>
+
+        <a href="#overview" class="active">🏠 Dashboard</a>
+        <a href="#profile">👤 My Profile</a>
+        <a href="#results">📊 Semester Results</a>
+        <a href="#attendance">📅 Attendance</a>
+        <a href="#subjects">📚 Subjects</a>
+        <a href="#exams">📝 Exam Schedule</a>
+        <a href="#announcements">📢 Announcements</a>
+
+        <div class="sidebar-bottom">
+            <p>Academic Year</p>
+            <strong>2026 - 2027</strong>
+        </div>
+    </aside>
+
+    <main class="main-content" id="overview">
+
+        <header class="topbar">
+            <div>
+                <h1>Student Dashboard</h1>
+                <p>Welcome back! Here's your academic overview.</p>
+            </div>
+            <div class="student-mini">
+                <div class="avatar">S</div>
+                <div>
+                    <strong>Student Name</strong>
+                    <p>B.Tech - CSE</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="profile-card" id="profile">
+            <div class="profile-avatar">S</div>
+            <div class="profile-info">
+                <h2>Student Name</h2>
+                <p>Bachelor of Technology - Computer Science</p>
+                <p>Roll Number: 26CSE001</p>
+                <p>Semester: First Year | Section: A</p>
+            </div>
+            <div class="profile-status">
+                <span>● Active Student</span>
+                <p>Academic Year 2026-27</p>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card blue">
+                <div class="stat-icon">📊</div>
+                <p>Current CGPA</p>
+                <h2>8.75</h2>
+                <small>Out of 10.00</small>
+            </div>
+
+            <div class="stat-card green">
+                <div class="stat-icon">📅</div>
+                <p>Overall Attendance</p>
+                <h2>92%</h2>
+                <small>Excellent attendance</small>
+            </div>
+
+            <div class="stat-card orange">
+                <div class="stat-icon">📚</div>
+                <p>Total Subjects</p>
+                <h2>6</h2>
+                <small>Current semester</small>
+            </div>
+
+            <div class="stat-card purple">
+                <div class="stat-icon">🏆</div>
+                <p>Exams Upcoming</p>
+                <h2>3</h2>
+                <small>Check exam schedule</small>
+            </div>
+        </section>
+
+        <section class="content-grid">
+
+            <div class="panel" id="results">
+                <div class="panel-heading">
+                    <h2>Semester Results</h2>
+                    <span class="tag">Semester 1</span>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Marks</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Python Programming</td>
+                            <td>92/100</td>
+                            <td><span class="grade">A+</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mathematics</td>
+                            <td>88/100</td>
+                            <td><span class="grade">A</span></td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>85/100</td>
+                            <td><span class="grade">A</span></td>
+                        </tr>
+                        <tr>
+                            <td>Computer Science</td>
+                            <td>90/100</td>
+                            <td><span class="grade">A+</span></td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>82/100</td>
+                            <td><span class="grade">A</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="result-footer">
+                    <span>Semester Performance</span>
+                    <strong>87.4%</strong>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill result-progress"></div>
+                </div>
+            </div>
+
+            <div class="panel" id="attendance">
+                <div class="panel-heading">
+                    <h2>Attendance Overview</h2>
+                    <span class="tag">This Semester</span>
+                </div>
+
+                <div class="attendance-item">
+                    <div class="attendance-label">
+                        <span>Python Programming</span>
+                        <strong>95%</strong>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill green-fill w95"></div>
+                    </div>
+                </div>
+
+                <div class="attendance-item">
+                    <div class="attendance-label">
+                        <span>Mathematics</span>
+                        <strong>90%</strong>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill blue-fill w90"></div>
+                    </div>
+                </div>
+
+                <div class="attendance-item">
+                    <div class="attendance-label">
+                        <span>English</span>
+                        <strong>88%</strong>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill orange-fill w88"></div>
+                    </div>
+                </div>
+
+                <div class="attendance-item">
+                    <div class="attendance-label">
+                        <span>Computer Science</span>
+                        <strong>94%</strong>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill green-fill w94"></div>
+                    </div>
+                </div>
+
+                <div class="attendance-item">
+                    <div class="attendance-label">
+                        <span>Physics</span>
+                        <strong>85%</strong>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill purple-fill w85"></div>
+                    </div>
+                </div>
+
+                <p class="attendance-note">
+                    Keep your attendance above 75%.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="panel subjects-panel" id="subjects">
+            <div class="panel-heading">
+                <h2>Subject Information</h2>
+                <span class="tag">Semester 1</span>
+            </div>
+
+            <div class="subject-grid">
+                <div class="subject-card">
+                    <div class="subject-icon">💻</div>
+                    <h3>Python Programming</h3>
+                    <p>Faculty: Mr. Kumar</p>
+                    <p>Credits: 4</p>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-icon">➗</div>
+                    <h3>Mathematics</h3>
+                    <p>Faculty: Mrs. Priya</p>
+                    <p>Credits: 4</p>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-icon">🌐</div>
+                    <h3>Computer Science</h3>
+                    <p>Faculty: Mr. Ravi</p>
+                    <p>Credits: 3</p>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-icon">🔬</div>
+                    <h3>Physics</h3>
+                    <p>Faculty: Mrs. Anu</p>
+                    <p>Credits: 3</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-grid bottom-grid">
+
+            <div class="panel" id="exams">
+                <div class="panel-heading">
+                    <h2>Examination Schedule</h2>
+                    <span class="tag">Upcoming</span>
+                </div>
+
+                <div class="exam-item">
+                    <div class="exam-date">
+                        <strong>05</strong>
+                        <span>NOV</span>
+                    </div>
+                    <div class="exam-details">
+                        <h3>Python Programming</h3>
+                        <p>09:30 AM - 12:30 PM</p>
+                    </div>
+                </div>
+
+                <div class="exam-item">
+                    <div class="exam-date">
+                        <strong>08</strong>
+                        <span>NOV</span>
+                    </div>
+                    <div class="exam-details">
+                        <h3>Mathematics</h3>
+                        <p>09:30 AM - 12:30 PM</p>
+                    </div>
+                </div>
+
+                <div class="exam-item">
+                    <div class="exam-date">
+                        <strong>12</strong>
+                        <span>NOV</span>
+                    </div>
+                    <div class="exam-details">
+                        <h3>Computer Science</h3>
+                        <p>09:30 AM - 12:30 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel" id="announcements">
+                <div class="panel-heading">
+                    <h2>Announcements</h2>
+                    <span class="tag">Latest News</span>
+                </div>
+
+                <div class="announcement">
+                    <div class="announcement-icon">📢</div>
+                    <div>
+                        <h3>Internal Examinations</h3>
+                        <p>Students should check the exam timetable.</p>
+                        <small>28 October 2026</small>
+                    </div>
+                </div>
+
+                <div class="announcement">
+                    <div class="announcement-icon">📚</div>
+                    <div>
+                        <h3>Library Reminder</h3>
+                        <p>Return borrowed books before the due date.</p>
+                        <small>27 October 2026</small>
+                    </div>
+                </div>
+
+                <div class="announcement">
+                    <div class="announcement-icon">🎯</div>
+                    <div>
+                        <h3>Assignment Submission</h3>
+                        <p>Submit pending assignments on time.</p>
+                        <small>26 October 2026</small>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>© 2026 StudentHub | Student Academic Dashboard</p>
+            <p>Learn • Grow • Achieve</p>
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>
